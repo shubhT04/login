@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="LoginPage.css">
+    <script src="./LoginPage.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <h1>LOGIN NOW!</h1>
+            <form name="login" id="login" onsubmit="logIn(event)" autocomplete="off">
+                <input type="text" name="firstname" required="yes" placeholder="Firstname">
+                <input type="text" name="lastname" required="yes" placeholder="Lastname">
+                <input type="email" name="email" required="yes" placeholder="Ex@gmail.com">
+                <input type="password" name="password" required="yes" placeholder="********">
+                <button>Submit</button>
+            </form> 
+        </div>
+    </div>
+    <div id="model" class="animate__animated animate_zoomIn">
+        <div id="model-body" class="animate__animated animate__zoomIn animate__faster">
+            <button id="check-btn" onclick="closeModel()">Close</button>
+            <h1 id="check-title">Login Success!</h1>
+        </div>
+    </div>
+</body>
+</html>
